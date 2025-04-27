@@ -10,10 +10,7 @@
 
 UAuraAttributeSet::UAuraAttributeSet()
 {
-	//ヘルスの初期値設定
-	InitHealth(10.f);
-	InitMana(10.f);
-	
+
 }
 
 void UAuraAttributeSet::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
