@@ -4,21 +4,20 @@
 
 #include "CoreMinimal.h"
 #include "GameplayTagContainer.h"
-
-/**
- * AuraGameplayTags]
- *
- * singleton containing native gameplay tags
- */
-
-
-struct FAuraGmaeplayTags
-{
-public:
-	static FAuraGmaeplayTags& Get() { return GameplayTags;}
-	static  void InitializeNativeGameplayTags();
-protected:
-
-private:
-	static FAuraGmaeplayTags GameplayTags;
-};
+ 
+ /**
+  * AuraGameplayTags
+  *
+  * Singleton containing native Gameplay Tags
+  */
+ 
+ struct FAuraGameplayTags
+ {
+ public:
+ 	static const FAuraGameplayTags& Get() { return GameplayTags;}
+ 	static void InitializeNativeGameplayTags();
+ protected:
+ 
+ private:
+ 	static FAuraGameplayTags GameplayTags;
+ };
